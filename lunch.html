@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>South Indian Lunch Spinner</title>
+  <link rel="stylesheet" href="lunch.css">
+</head>
+<body>
+  <header>
+    <h1>What's for Lunch?</h1>
+    <p>Idli, dosa, or meals? Spin the wheel and let it choose for you.</p>
+    <a class="back-link" href="index.html">&larr; Back home</a>
+  </header>
+
+  <main>
+    <section class="wheel-section">
+      <div class="wheel-wrap">
+        <div class="pointer"></div>
+        <canvas id="wheel" width="360" height="360"></canvas>
+      </div>
+      <button id="spinBtn">Spin</button>
+      <p id="result"></p>
+    </section>
+
+    <section class="options-section">
+      <h2>Lunch options</h2>
+      <ul id="optionList"></ul>
+      <form id="addForm">
+        <input id="newOption" type="text" placeholder="Add an option..." required>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Simple Website</p>
+  </footer>
+
+  <script src="lunch.js"></script>
+</body>
+</html>
